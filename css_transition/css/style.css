@@ -1,0 +1,80 @@
+body {
+    background-color: gray;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightsalmon;
+    margin: 200px auto 0 auto;
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background: lightsalmon;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: salmon;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: darksalmon;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background-color: lightsalmon;
+        transform: rotate(180deg)
+    }
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background: lightsalmon;
+    margin: 200px auto 0 auto;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 0.5sec;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes fade-in {
+    0% {
+        background: rgba(255, 160, 122, 0);
+        width: 60%;
+    }
+    25% {
+        background: rgba(255, 142, 97, 0.233);
+        width: 70%;
+    }
+    50% {
+        background: rgba(255, 160, 122, 0.507);
+        width: 80%;
+    }
+    75% {
+        background: rgba(255, 139, 93, 0.753);
+        width: 90%;
+    }
+    100% {
+        background: rgb(255, 100, 39);
+        width: 100%;
+    }
+}
