@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.parallax {
+    background-image: url("../images/surreal_glasses.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ulnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1dd84e5;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.linav {
+    display: inline-block;
+}
+
+.linav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+
+.button {
+    background-color: #f17b2c;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+.plainlink {
+    color: white;
+    text-decoration: none;
+}

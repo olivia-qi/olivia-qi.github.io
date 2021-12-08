@@ -1,0 +1,79 @@
+body {
+    background: rgb(44, 44, 44);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 20px
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+pre code {
+    background: rgb(248, 248, 248);
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+a {
+    color: red
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: indigo;
+}
+
+a.special {
+    color: orange;
+}
+
+
+/*"#" means id, which is unique. a "." is a class.*/
+
+#hover-div {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+#hover-div:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+
+/*first-child means "the first p tag that's a child of another tag, do this"*/
+
+
+/*adding "#hover-div" means the command only applies for stuff in the #hover-div*/
+
+#hover-div p:first-child {
+    color: red
+}
+
+#hover-div p:last-child {
+    font-weight: bold;
+}
