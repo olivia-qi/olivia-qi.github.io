@@ -1,21 +1,54 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
+
+/*From w3schools*/
+
 .parallax {
-    background-image: url("../images/surreal_glasses.jpg");
+    background-image: url("../images/brutalistbuilding.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+#welcome {
+    font-size: 4em;
+    color: #f17b2c;
+    animation-name: flash;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 .ulnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f1dd84e5;
+    background-color: rgba(0, 0, 0, 0.76);
     overflow: hidden;
     display: block;
     text-align: center;
@@ -31,7 +64,7 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 10px 10px;
-    color: black;
+    color: white;
 }
 
 .grid-container {
@@ -58,9 +91,42 @@ body {
     text-align: center;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 }
 
 .plainlink {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    overflow: hidden;
+    width: 96%;
+    height: 10em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px 10px 10px;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
 }
