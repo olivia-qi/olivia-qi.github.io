@@ -1,0 +1,160 @@
+        body {
+            margin: 0 0 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(26, 26, 26);
+            overflow-x: hidden;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .left,
+            .right {
+                width: 85% !important;
+            }
+            body {
+                overflow-x: hidden !important;
+            }
+        }
+        
+        h1 {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            color: whitesmoke;
+            font-size: 3em;
+        }
+        
+        h2 {
+            margin: 5vh 5vw;
+            color: whitesmoke;
+            font-size: 1.7em;
+        }
+        
+        p {
+            color: whitesmoke;
+            font-size: 1.3em;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            font-size: 1.2em;
+        }
+        /*Nav bar*/
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(58, 58, 58);
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        button {
+            display: block;
+            margin: 2vh auto;
+            background-color: crimson;
+            border-radius: 2px;
+            border: none;
+            padding: 2vh 4vw;
+            box-shadow: 2px 2px 5px black, -3px -3px 6px rgb(83, 83, 83);
+        }
+        
+        .home {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("../images/home.jpg");
+            background-size: cover;
+        }
+        
+        .home::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #000;
+            opacity: 0.6;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .wrapper {
+            width: 100%;
+        }
+        
+        .centered {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+        }
+        
+        .description {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+        }
+        
+        div.scrollmenu {
+            overflow: auto;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        .event {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            width: 20em;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .left {
+            float: left;
+            width: 38%;
+            margin: 0 0;
+            padding: 5vh 5vw;
+        }
+        
+        .right {
+            float: left;
+            width: 38%;
+            margin: 0 0;
+            padding: 5vh 5vw;
+        }
+        
+        .footer {
+            float: left;
+            width: 100%;
+            padding-left: 5vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            background-color: rgb(58, 58, 58);
+        }
