@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Transitions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container m-header scene_element scene_element--fadein">
+        <h1>Smooth Transitions Demo</h1>
+        <p style="color: whitesmoke;">This demo's gonna use keyframes and a jquery plugin called smoothstate.js to give your website cool transitions. Credit to <a href="https://css-tricks.com/add-page-transitions-css-smoothstate-js/" style="color: whitesmoke;" target="_blank">css-tricks</a>            except they took it one step further by incorporating JS.</p>
+    </div>
+    <div class="content-container m-aside scene_element scene_element--fadeinup">
+        <h2>Plan:</h2>
+        <ol>
+            <li>Make the normal content of the page</li>
+            <li>Create the keyframes</li>
+            <li>Attach keyframes to classes with css animation properties</li>
+            <li>Add classes to html</li>
+        </ol>
+        <h2>1. Make the normal content of the page</h2>
+        <p>Chunk your content into divs to make it easier to animate.</p>
+        <h2>2. Create the keyframes</h2>
+        <p>I wanted the heading text to fade in and the content to slide up, so here's what I wrote in my stylesheet.</p>
+        <div class="code-box">
+            <code><p>@keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+          
+            100% {
+              opacity: 1;
+            }
+          }
+          <br>
+          
+          @keyframes fadeInUp {
+            0% {
+              opacity: 0;
+              transform: translate3d(0, 100%, 0);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+          </p>
+          </code>
+        </div>
+
+        <h2>3. Attach keyframes to classes with CSS animation properties</h2>
+        <p>Try not to have your transition times too long otherwise your website will be annoying</p>
+
+        <div class="code-box">
+            <code><p>/** Basic styles for an animated element */
+        <br>
+        .scene_element {
+            animation-duration: 0.25s;
+            transition-timing-function: ease-in;
+            animation-fill-mode: both;
+        }
+        
+        <br><br>
+
+        /** An element that fades in */
+        <br>
+
+        
+        .scene_element--fadein {
+            animation-name: fadeIn;
+        }
+        <br><br>
+
+        
+        /** An element that fades in and slides up */
+        <br>
+
+        
+        .scene_element--fadeinup {
+            animation-name: fadeInUp;
+        }
+        </p></code>
+        </div>
+        <h2>4. Add classes to HTML</h2>
+        <p>I want to make the header fade in so I'll assign it the <code>.scene-element--fadein </code> property. I also want to take the content fade in and float up so I'll assign that the <code>scene_element--fadeinup</code> property.</p>
+        <p>And that's it! Refresh the page and now your stuff should float in.</p>
+    </div>
+    <footer>
+        <p style="color: whitesmoke; text-align: center;">&copy Olivia Qi | Web 2</p>
+    </footer>
+</body>
+
+</html>
