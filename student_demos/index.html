@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qi | Student Demos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Student demos</h1>
+    <h2>Jack's demo</h2>
+    <p>This was pretty simple to follow and also made a cool effect I wanna use in my portfolio, I rate this a 10/10.</p>
+    <div id="slideshow">
+        <div>
+            <img src="images/stock2.jpg" alt="">
+        </div>
+        <div> <img src="images/stock3.jpg" alt=""></div>
+    </div>
+    <h2>Emerson's demo</h2>
+    <p>I had some trouble getting the demo to work, but I somehow eventually got it.</p>
+</body>
+<script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
+</script>
+
+</html>
