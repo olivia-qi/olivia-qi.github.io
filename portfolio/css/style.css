@@ -47,6 +47,15 @@ a {
     padding: 0 0 0 0;
 }
 
+.titlesection {
+    background-image: url("../images/side-headshot.png"), url("../images/side-headshot-flipped.png");
+    background-position: -15vw, 67vw;
+    background-size: 45%, 45%;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

@@ -1,0 +1,152 @@
+    /* "*" means "everything
+"border-box" means "hey whatever the page size I gave you, work WITHIN that*/
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(../images/backgroundimage.jpg);
+        background-size: 100vw;
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 2vw
+    }
+    
+    h3 {
+        font-size: 1.8vw
+    }
+    
+    p,
+    a {
+        font-size: 1.6vw;
+    }
+    
+    header {
+        background-color: rgba(255, 213, 213, 0.658);
+        height: 4em;
+        position: sticky;
+        top: -10px;
+    }
+    
+    .header-inner {
+        float: left;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    
+    .logo {
+        float: left;
+        width: 30%;
+        padding-left: 40px;
+    }
+    
+    nav {
+        float: left;
+        text-align: right;
+        width: 70%;
+        padding: 22px 40px;
+    }
+    
+    nav a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    div,
+    a {
+        border-radius: 10px;
+    }
+    
+    .banner {
+        background-color: rgba(245, 245, 245, 0.658);
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
+    /*RESPONSIVE ELEMENTS*/
+    /*Use percentages for responsiveness*/
+    
+    .side-nav {
+        float: left;
+        width: 20%;
+    }
+    /*Always float left unless what you're floating is alone
+Padding will make something wider and can mess up the floats*/
+    
+    .main {
+        float: left;
+        width: 59%;
+        padding: 0 20px;
+        background-color: rgba(245, 245, 245, 0.658);
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .right {
+        float: left;
+        width: 20%;
+        background-color: rgba(245, 245, 245, 0.658);
+        padding: 15px;
+        margin-top: 10px;
+    }
+    /*NAV STYLE*/
+    
+    .side-nav a {
+        background-color: rgba(245, 245, 245, 0.658);
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 8px;
+    }
+    /*FOOTER STYLE*/
+    
+    .footer {
+        background-color: rgba(245, 245, 245, 0.658);
+        padding: 10px;
+        clear: both;
+        /*"clear" clears all the float rules*/
+        /*adding "margin-top" won't be enough if you don't make the container float (see below) bc browser thinks this unfloated container goes right under the unfloated header*/
+    }
+    
+    .container {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    @media only screen and (max-width:620) {
+        .left,
+        .main,
+        .right {
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 621px) and (max-width: 1000px) {
+        .main {
+            width: 100%;
+        }
+        .right {
+            width: 100%
+        }
+        .left {
+            width: 100%
+        }
+    }
