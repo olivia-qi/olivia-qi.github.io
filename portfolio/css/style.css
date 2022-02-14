@@ -18,8 +18,9 @@ h1 {
 
 h2 {
     color: #082b9d;
-    font-size: 3vw;
+    font-size: 5em;
     padding-left: 10vw;
+    margin: 0 0 0 0;
     font-family: swear-display, serif;
     font-weight: 500;
     font-style: normal;
@@ -87,6 +88,9 @@ ul {
     padding: 0;
     overflow: hidden;
 }
+
+
+/*hamburger menu stolen from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 
 li {
     float: left;
