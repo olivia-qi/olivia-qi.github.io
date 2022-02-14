@@ -22,12 +22,10 @@ function addObserver(el, options) {
             if (entry.isIntersecting) {
                 if (entry.target.id == "aboutme") {
                     entry.target.classList.add('rectangle')
-                        //document.getElementById('textbig').style.backgroundColor = 'yellow'
                 } else if (entry.target.id == "aboutme_text") {
                     entry.target.classList.add('rectangletext')
-                } else if (entry.target.id == "FILL THIS") {
-
-
+                } else if (entry.target.id == "textbig") {
+                    entry.target.classList.add('bigtext')
                 }
                 observer.unobserve(entry.target)
             }
@@ -40,21 +38,15 @@ scrollTrigger('#aboutme')
     //scrollTrigger('.rectangletext')
 scrollTrigger('#aboutme_text')
 
-console.log("here")
+console.log("haha you got this far")
 
-// Example usages:
-//scrollTrigger('.intro-text')
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
 
-// scrollTrigger('.scroll-reveal', {
-//     rootMargin: '-200px',
-// })
+    } else {
+        x.className = "topnav";
 
-// scrollTrigger('.loader', {
-//     rootMargin: '-200px',
-//     cb: function(el) {
-//         el.innerText = 'Loading...'
-//         setTimeout(() => {
-//             el.innerText = 'Task Complete!'
-//         }, 1000)
-//     }
-// })
+    }
+}
