@@ -24,8 +24,17 @@ function addObserver(el, options) {
                     entry.target.classList.add('rectangle')
                 } else if (entry.target.id == "aboutme_text") {
                     entry.target.classList.add('rectangletext')
-                } else if (entry.target.id == "textbig") {
-                    entry.target.classList.add('bigtext')
+                } else if (entry.target.id == "firstyoutube") {
+                    document.getElementById('textbig1').classList.add('bigtext')
+                } else if (entry.target.id == 'firstimage') {
+                    document.getElementById('textbig2').classList.add('bigtext')
+                    document.getElementById('textbig1').classList.remove('bigtext')
+                } else if (entry.target.id == 'secondyoutube') {
+                    document.getElementById('textbig3').classList.add('bigtext')
+                    document.getElementById('textbig2').classList.remove('bigtext')
+                } else if (entry.target.id == 'secondimage') {
+                    document.getElementById('textbig4').classList.add('bigtext')
+                    document.getElementById('textbig3').classList.remove('bigtext')
                 }
                 observer.unobserve(entry.target)
             }
@@ -37,7 +46,10 @@ function addObserver(el, options) {
 scrollTrigger('#aboutme')
     //scrollTrigger('.rectangletext')
 scrollTrigger('#aboutme_text')
-
+scrollTrigger('#firstyoutube')
+scrollTrigger('#firstimage')
+scrollTrigger('#secondyoutube')
+scrollTrigger('#secondimage')
 console.log("haha you got this far")
 
 function myFunction() {
