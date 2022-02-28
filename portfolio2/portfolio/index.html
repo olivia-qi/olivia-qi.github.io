@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/tqe1qqp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <style>
     @media screen and (max-width: 650px) {
@@ -44,26 +42,8 @@
 </style>
 
 <body>
-    <div w3-include-html="nav.html"></div>
-    <!---stolen from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp--->
     <section class="titlesection">
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <ul>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="music.html">Music</a>
-                    <a href="#">Art</a>
-                    <a href="#">Web design</a>
-                    <a href="#">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-
-                </ul>
-            </div>
-
-        </nav>
+        <div w3-include-html="nav.html"></div>
 
         <h1>Olivia Qi</h1>
         <h2 id="title">Musician, artist, web designer</h2>
@@ -187,7 +167,13 @@
         </div>
 
     </footer>
-    <script src="js/script.js"></script>
+
+
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
 
 </body>
 
