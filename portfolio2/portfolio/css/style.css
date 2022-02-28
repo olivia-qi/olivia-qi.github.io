@@ -447,6 +447,9 @@ div.scrollmenu {
     overflow: auto;
 }
 
+
+/*The dubious hack with determining the size of the youtube video with padding is from https://avexdesigns.com/blog/responsive-youtube-embed*/
+
 .video-container {
     position: relative;
     padding-bottom: 23%;
