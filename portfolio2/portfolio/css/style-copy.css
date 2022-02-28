@@ -1,0 +1,449 @@
+body {
+    background-color: rgb(252, 249, 245);
+    margin: 0 0 0 0;
+}
+
+.parallax {
+    margin: 0 0 0 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(../images/filler-about.jpg), url(../images/filler-about.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10%, 10%;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.layer1 {
+    background: url(../images/filler-art.jpg);
+    background-size: cover;
+    transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+    animation: moveUp 1.8s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.layer2 {
+    background: url(../images/filler-headshot.jpg);
+    background-size: cover;
+    transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 0.2;
+    animation: scaler 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.layer3 {
+    background: url(../images/strawberry-fields.png);
+    background-size: cover;
+    transform: scale3d(1.3, 1.3, 1.3);
+    opacity: 0.1;
+    animation: scaler 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scaler {
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    color: #082b9d;
+    font-family: swear-display, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    color: #082b9d;
+    font-size: 5em;
+    padding-left: 10vw;
+    margin: 0 0 0 0;
+    font-family: swear-display, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: swear-text, serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+a {
+    font-family: swear-text, serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#abouth2 {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+#title {
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3vw;
+    color: #082b9d;
+    padding: 0 0 0 0;
+}
+
+.description {
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.2em;
+    color: #082b9d;
+    padding: 0 0 0 0;
+}
+
+.titlesection {
+    background-image: url("../images/side-headshot.png"), url("../images/side-headshot-flipped.png");
+    background-position: -15vw, 67vw;
+    background-size: 45%, 45%;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#aboutbio {
+    color: #082b9d;
+    width: 30%;
+}
+
+
+/*hamburger menu stolen from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+#myTopnav {
+    background-color: rgba(252, 249, 245, 0.842);
+}
+
+
+/*About me animation, ADD THE ON-SCROLL ANIMATION THINGY*/
+
+.rectangle {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 35vh;
+    width: 80vw;
+    background-color: #082b9d;
+    position: relative;
+    z-index: 10;
+    animation-name: shrinkrectangle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes shrinkrectangle {
+    0% {
+        width: 80%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+.rectangletext {
+    height: 35vh;
+    width: 80vw;
+    position: absolute;
+    z-index: 1;
+    animation-name: rectangletextappear;
+    animation-delay: 0.25s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    color: rgba(255, 255, 255, 0);
+}
+
+@keyframes rectangletextappear {
+    0% {
+        color: rgba(0, 0, 0, 0);
+    }
+    25% {
+        color: rgba(0, 0, 0, 0.253)
+    }
+    50% {
+        color: rgba(0, 0, 0, 0.507)
+    }
+    75% {
+        color: rgba(0, 0, 0, 0.74)
+    }
+    100% {
+        color: black;
+    }
+}
+
+.bigtext {
+    background-color: yellow;
+    font-size: 30vh;
+}
+
+.about-content {
+    background-color: #082b9d;
+    margin-top: 2em;
+    margin-bottom: 10em;
+    height: 20em;
+    width: 100%;
+    float: left;
+}
+
+
+/*Footer (from https://csshint.com/html-css-footer-design/*/
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
+
+
+/*About page parallax EXPERIMENTAL*/
+
+.about-background {
+    background-image: url(../images/filler-about.jpg), url(../images/filler-about.jpg);
+    background-position: left top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10em, 10em;
+    background-attachment: fixed;
+}
+
+
+/*.testimonial-wrap {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.testimonial {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}*/
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.testimonial {
+    width: 23em;
+    height: 15em;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    border-style: solid;
+}
+
+
+/*let's try this*/

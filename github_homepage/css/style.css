@@ -1,43 +1,82 @@
-* {
+body {
+    background: rgb(240, 236, 254);
+    background: linear-gradient(53deg, rgba(240, 236, 254, 1) 9%, rgba(205, 231, 253, 1) 50%, rgba(225, 254, 233, 1) 92%);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 0 0 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.landing {
-    background: rgb(106, 188, 255);
-    background: radial-gradient(circle, rgba(106, 188, 255, 1) 52%, rgba(72, 161, 235, 1) 100%);
+#landing {
+    height: 100vh;
 }
 
 h1 {
-    font-size: 4em;
-    text-align: center;
-    padding-left: 5em;
-    transform: translate(0, 30vh);
-    color: white;
+    font-size: 5vw;
+}
+
+.welcome {
+    float: left;
+    width: 45%;
+    margin-top: 10%;
+    margin-left: 5vw;
+}
+
+#computer {
+    width: 45%;
+    float: left;
+    margin-top: 5%;
+}
+
+#bio {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 750px) {
+    .welcome {
+        width: 100%;
+    }
+    #computer {
+        width: 100%;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    #bio {
+        font-size: 4vw;
+        padding-right: 7vw;
+    }
 }
 
 h2 {
     font-size: 3em;
     margin-left: 1em;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 1.5em;
-    color: black;
+    font-size: 2em;
 }
 
 p {
     font-size: 1.2em;
 }
 
-#bio {
-    transform: translate(0, 35vh);
-    margin-left: 3em;
-    margin-right: 3em;
-    padding-left: 15em;
-    color: white;
+#navbar {
+    overflow: hidden;
+    background-color: #161616;
+    position: sticky;
+    top: 0;
+}
+
+#navbar a {
+    text-align: center;
+    display: inline-block;
+    color: whitesmoke;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 button {
@@ -46,7 +85,6 @@ button {
     font-size: 1.2em;
     color: white;
     background: #6abcff;
-    box-shadow: 7px 7px 14px #c4d5e3, -7px -7px 14px #f4ffff;
     border-style: none;
     cursor: pointer;
     border-radius: 5px;
@@ -63,20 +101,49 @@ button {
     height: 100vh;
 }
 
-
-/*Grid*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.grid-item {
-    padding: 3em;
-}
-
 .description {
-    background-color: #dcefff;
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    float: left;
+    width: 45%;
+    padding: 5em 3em;
+}
+
+.rectangle {
+    background-color: #161616;
+    border-radius: 0px 30px 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .description {
+        width: 90%;
+    }
+    img {
+        width: 80vw;
+    }
+    .image {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 1890px) {
+    .description {
+        padding: 5em 3em;
+        border-radius: 0 30px 30px 0 !important;
+    }
+}
+
+.image {
+    float: left;
+    width: 40%;
+    padding-left: 3em;
+    margin-top: 5em;
+}
+
+@media screen and (min-width: 1200px) {
+    .image {
+        margin-top: 0em;
+    }
 }
 
 .grid-container2 {
@@ -172,4 +239,16 @@ button {
 
 .footer-distributed p.footer-links a:hover {
     text-decoration: underline;
+}
+
+.demo {
+    float: left;
+    width: 16em;
+    height: 12em;
+    background-color: #161616;
+    color: white;
+    margin-left: 1em;
+    padding: 0 1em;
+    overflow-wrap: break-word;
+    border-radius: 1.2em;
 }
