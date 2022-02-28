@@ -501,7 +501,7 @@ div.scrollmenu {
     float: left;
     width: 42%;
     animation-name: fadein;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
