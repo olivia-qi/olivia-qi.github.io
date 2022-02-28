@@ -8,6 +8,7 @@ function scrollTrigger(selector, options = {}) {
     })
 }
 
+
 function addObserver(el, options) {
     if (!('IntersectionObserver' in window)) {
         if (options.cb) {
@@ -17,24 +18,11 @@ function addObserver(el, options) {
         }
         return
     }
-    let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
+    let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.id == "aboutme") {
-                    entry.target.classList.add('rectangle')
-                } else if (entry.target.id == "aboutme_text") {
-                    entry.target.classList.add('rectangletext')
-                } else if (entry.target.id == "firstyoutube") {
-                    document.getElementById('textbig1').classList.add('bigtext')
-                } else if (entry.target.id == 'firstimage') {
-                    document.getElementById('textbig2').classList.add('bigtext')
-                    document.getElementById('textbig1').classList.remove('bigtext')
-                } else if (entry.target.id == 'secondyoutube') {
-                    document.getElementById('textbig3').classList.add('bigtext')
-                    document.getElementById('textbig2').classList.remove('bigtext')
-                } else if (entry.target.id == 'secondimage') {
-                    document.getElementById('textbig4').classList.add('bigtext')
-                    document.getElementById('textbig3').classList.remove('bigtext')
+                if (entry.target.classList == "indexthing") {
+                    entry.target.classList.add('indexthing')
                 }
                 observer.unobserve(entry.target)
             }
@@ -43,8 +31,8 @@ function addObserver(el, options) {
     observer.observe(el)
 }
 
+scrollTrigger('.indexthing')
 scrollTrigger('#aboutme')
-    //scrollTrigger('.rectangletext')
 scrollTrigger('#aboutme_text')
 scrollTrigger('#firstyoutube')
 scrollTrigger('#firstimage')
@@ -52,6 +40,7 @@ scrollTrigger('#secondyoutube')
 scrollTrigger('#secondimage')
 console.log("haha you got this far")
 
+/*Nav*/
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

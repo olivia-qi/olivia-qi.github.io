@@ -497,6 +497,18 @@ div.scrollmenu {
 .indexthing {
     float: left;
     width: 42%;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .indexthing-image {

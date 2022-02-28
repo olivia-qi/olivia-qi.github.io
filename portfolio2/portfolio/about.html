@@ -11,59 +11,59 @@
     <link rel="stylesheet" href="https://use.typekit.net/tqe1qqp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+    <style>
+        h2 {
+            padding-left: 10vw;
+        }
+        
+        @media screen and (max-width: 1150px) {
+            .about-content {
+                height: 26em;
+            }
+        }
+        
+        @media screen and (min-width: 730px) and (max-width: 900px) {
+            .about-content {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            h2 {
+                color: #082b9d !important;
+            }
+            p {
+                color: black !important;
+                width: 40% !important;
+            }
+            .about-background {
+                background-image: none;
+            }
+        }
+        
+        @media screen and (max-width: 729px) {
+            .about-content {
+                background-color: rgba(255, 255, 255, 0);
+                height: 55em;
+                margin-bottom: 2em;
+            }
+            h2 {
+                color: #082b9d !important;
+                float: left;
+                margin-top: 2em;
+            }
+            p {
+                color: black !important;
+                width: 80% !important;
+                float: left;
+            }
+            .about-background {
+                background-image: none;
+            }
+            img {
+                padding-left: 4.5em !important;
+            }
+        }
+    </style>
 </head>
-<style>
-    h2 {
-        padding-left: 10vw;
-    }
-    
-    @media screen and (max-width: 1150px) {
-        .about-content {
-            height: 26em;
-        }
-    }
-    
-    @media screen and (min-width: 730px) and (max-width: 900px) {
-        .about-content {
-            background-color: rgba(255, 255, 255, 0);
-        }
-        h2 {
-            color: #082b9d !important;
-        }
-        p {
-            color: black !important;
-            width: 40% !important;
-        }
-        .about-background {
-            background-image: none;
-        }
-    }
-    
-    @media screen and (max-width: 729px) {
-        .about-content {
-            background-color: rgba(255, 255, 255, 0);
-            height: 55em;
-            margin-bottom: 2em;
-        }
-        h2 {
-            color: #082b9d !important;
-            float: left;
-            margin-top: 2em;
-        }
-        p {
-            color: black !important;
-            width: 80% !important;
-            float: left;
-        }
-        .about-background {
-            background-image: none;
-        }
-        img {
-            padding-left: 4.5em !important;
-        }
-    }
-</style>
+
 <section class="titlesection">
     <div w3-include-html="nav.html"></div>
     <h1>About me</h1>

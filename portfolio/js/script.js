@@ -20,8 +20,8 @@ function addObserver(el, options) {
     let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.id == "aboutme") {
-                    entry.target.classList.add('rectangle')
+                if (entry.target.id == "preindexthing") {
+                    entry.target.classList.add('indexthing')
                 } else if (entry.target.id == "aboutme_text") {
                     entry.target.classList.add('rectangletext')
                 } else if (entry.target.id == "firstyoutube") {
@@ -42,9 +42,8 @@ function addObserver(el, options) {
     }, options)
     observer.observe(el)
 }
-
+scrollTrigger('#preindexthing')
 scrollTrigger('#aboutme')
-    //scrollTrigger('.rectangletext')
 scrollTrigger('#aboutme_text')
 scrollTrigger('#firstyoutube')
 scrollTrigger('#firstimage')
@@ -52,6 +51,7 @@ scrollTrigger('#secondyoutube')
 scrollTrigger('#secondimage')
 console.log("haha you got this far")
 
+/*Nav */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
