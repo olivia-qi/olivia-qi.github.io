@@ -497,6 +497,11 @@ div.scrollmenu {
     grid-template-columns: 50% 50%;
 }
 
+#preindexthing {
+    float: left;
+    width: 42%;
+}
+
 .indexthing {
     float: left;
     width: 42%;
@@ -518,6 +523,50 @@ div.scrollmenu {
     width: 40%;
     height: 23%;
     margin-left: 1vw;
+}
+
+.beforeAfterContainer {
+    position: relative;
+    width: 50vw;
+    height: 30vw;
+    margin: 0 0 0 0;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 50vw 100%;
+}
+
+.afterImg {
+    background-image: url("../images/interior-after.jpg");
+}
+
+.beforeImg {
+    background-image: url("../images/interior-before.jpg");
+    width: 50%;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    margin-top: 15vw;
+    border: none;
+    cursor: pointer;
+    background: #082b9d;
+    left: 0;
+    top: 0;
+}
+
+.slider::-moz-range-thumb {
+    width: 6px;
+    height: 30vw;
+    background: #082b9d;
+    cursor: pointer;
 }
 
 
