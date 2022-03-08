@@ -23,6 +23,12 @@ function addObserver(el, options) {
                 if (entry.target.id == "preindexthing") {
                     entry.target.classList.add('indexthing')
                         //console.log("scroll");
+                } else if (entry.target.id == "preindexthing2") {
+                    entry.target.classList.add('indexthing')
+                } else if (entry.target.id == "preindexthing3") {
+                    entry.target.classList.add('indexthing')
+                } else if (entry.target.id == "preindexthing4") {
+                    entry.target.classList.add('indexthing')
                 }
                 observer.unobserve(entry.target)
             }
@@ -33,12 +39,9 @@ function addObserver(el, options) {
 
 $(function() {
     scrollTrigger('#preindexthing');
-    // scrollTrigger('#aboutme');
-    // scrollTrigger('#aboutme_text');
-    // scrollTrigger('#firstyoutube');
-    // scrollTrigger('#firstimage');
-    // scrollTrigger('#secondyoutube');
-    // scrollTrigger('#secondimage');
+    scrollTrigger('#preindexthing2');
+    scrollTrigger('#preindexthing3');
+    scrollTrigger('#preindexthing4');
     // console.log("haha you got this far");
 });
 

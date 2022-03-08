@@ -15,13 +15,10 @@
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <style>
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 800px) {
             .indexthing-image {
                 width: 80%;
                 margin-left: 10vw;
-            }
-            #beforeAfterContainer-wrap {
-                width: 80% !important;
             }
             h2 {
                 width: 90vw;
@@ -40,6 +37,99 @@
                 padding-right: 80%;
                 padding-bottom: 55%;
                 margin-left: 10vw;
+            }
+            #beforeAfterContainer-wrap {
+                margin: 5vw 10vw;
+                float: left;
+                width: 80vw;
+                height: 40vw;
+                border: black 1px solid;
+            }
+            .beforeAfterContainer {
+                position: relative;
+                width: 80vw;
+                height: 40vw;
+                margin: 0vw auto;
+            }
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: 80vw 100%;
+            }
+            .afterImg {
+                background-image: url("./images/interior-after.jpg");
+            }
+            .beforeImg {
+                background-image: url("./images/interior-before.jpg");
+                width: 50%;
+            }
+            .slider {
+                position: absolute;
+                width: 100%;
+                height: 0%;
+                margin-top: 20vw;
+                border: none;
+                cursor: pointer;
+                background: #082b9d;
+                left: 0;
+                top: 0;
+            }
+            .slider::-moz-range-thumb {
+                width: 6px;
+                height: 40vw;
+                background: #082b9d;
+                cursor: pointer;
+            }
+        }
+        
+        @media screen and (min-width: 801px) {
+            #beforeAfterContainer-wrap {
+                margin: 5vw 1vw;
+                float: left;
+                width: 40vw;
+                height: 20vw;
+                border: black 1px solid;
+            }
+            .beforeAfterContainer {
+                position: relative;
+                width: 40vw;
+                height: 20vw;
+                margin: 0vw auto;
+            }
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: 40vw 100%;
+            }
+            .afterImg {
+                background-image: url("./images/interior-after.jpg");
+            }
+            .beforeImg {
+                background-image: url("./images/interior-before.jpg");
+                width: 50%;
+            }
+            .slider {
+                position: absolute;
+                width: 100%;
+                height: 0%;
+                margin-top: 10vw;
+                border: none;
+                cursor: pointer;
+                background: #082b9d;
+                left: 0;
+                top: 0;
+            }
+            .slider::-moz-range-thumb {
+                width: 6px;
+                height: 20vw;
+                background: #082b9d;
+                cursor: pointer;
             }
         }
     </style>
@@ -97,7 +187,7 @@
 
     <div class="indexthing " style="margin-left: 10vw; ">
         <h2>ProArt Foundation</h2>
-        <p>The first project I made in Web 2 to show what I learned from Web 2 and an Advanced Web Design seminar.</p>
+        <p>The website I made in Advanced Web Design seminar for a local nonprofit.</p>
     </div>
     <img src="images/proart-original.jpg " alt=" " class="indexthing-image " style="margin-top: 1em; margin-bottom: 1em; border: 1px solid black ">
     <hr style="clear: both; ">
@@ -134,7 +224,21 @@
     <span style="float: left" class="video-container2">
         <iframe src="https://www.youtube.com/embed/uDjQKJF53j4 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
     </span>
+    <h2 style="padding-left: 10vw; padding-bottom: 3vh; float: left;">
+        Art
+    </h2>
 
+    <ul style=" display: flex; flex-wrap: wrap; margin-left: 8vw; padding-left: 1vw; float: left;">
+        <li style=" height: 70vh; flex-grow: 1; margin: 1em; ">
+            <img src="images/basketstilllife.jpeg " alt=" " style="max-height: 100%; min-width: 100%; object-fit: cover; ">
+        </li>
+        <li style=" height: 70vh; flex-grow: 1; margin: 1em; ">
+            <img src="images/youngdavid.jpeg " alt=" " style="max-height: 100%; min-width: 100%; object-fit: cover; ">
+        </li>
+        <li style=" height: 70vh; flex-grow: 1; margin: 1em; ">
+            <img src="images/twoheaded.jpeg " alt=" " style="max-height: 100%; min-width: 100%; object-fit: cover; ">
+        </li>
+    </ul>
 </body>
 
 </html>

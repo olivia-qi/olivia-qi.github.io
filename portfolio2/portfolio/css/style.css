@@ -525,43 +525,11 @@ div.scrollmenu {
     margin-left: 1vw;
 }
 
-#beforeAfterContainer-wrap {
-    margin: 5vw 1vw;
-    float: left;
-    width: 30%;
-    height: 30%;
-}
-
-.beforeAfterContainer {
-    position: relative;
-    width: 100%;
-    height: 20vw;
-    margin: 0 0 0 0;
-}
-
-.img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 50vw 100%;
-}
-
-.afterImg {
-    background-image: url("../images/interior-after.jpg");
-}
-
-.beforeImg {
-    background-image: url("../images/interior-before.jpg");
-    width: 50%;
-}
-
 .slider {
     position: absolute;
     width: 100%;
     height: 0%;
-    margin-top: 11vw;
+    margin-top: 19vw;
     border: none;
     cursor: pointer;
     background: #082b9d;
