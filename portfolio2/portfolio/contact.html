@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/tqe1qqp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        @media screen and (max-width: 650px) {
+            .blue-rectangle {
+                width: 92%;
+                margin: 1em 1em !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="titlesection">
+        <div w3-include-html="nav.html"></div>
+
+        <h1>Contact</h1>
+        <h2 id="title">Please talk to me</h2>
+    </section>
+
+    <div class="blue-rectangle">
+        <h2 style="color: whitesmoke; padding-left: 4vw;">Talk to me</h2>
+        <form action="https://getform.io/f/60d5ceb2-9884-46a0-bd5b-40afca1d62c6" method="POST" style="margin-left: 3em;">
+            <label for="name"><p>Name:</p></label>
+            <input type="text" name="name" class="input"><br>
+            <label for="email"><p>Email:</p></label>
+            <input type="email" name="email" class="input"><br>
+            <label for="email"><p>Write something:</p></label>
+            <textarea name="" id="" cols="30" rows="10" style="height: 15vh;"><input type="text" name="body" class="input"></textarea><br><br>
+            <button type="submit" id="send">Send</button>
+
+        </form>
+    </div>
+
+    <div class="blue-rectangle" style="margin-left: 0; ">
+        <h2 style="color: whitesmoke; padding-left: 4vw;">Contact info</h2>
+        <p style="margin-left: 3em;">Email:
+            <a href="mailto:oqi@eastsideprep.org" style="color: whitesmoke; text-decoration: underline;"> oqi@eastsideprep.org</a>
+        </p>
+        <p style="margin-left: 3em;">Phone:
+            <a href="tel:4255895260" style="color: whitesmoke; text-decoration: underline;">425-589-5260</a>
+        </p>
+
+    </div>
+    <div class="blue-rectangle" style="margin-left: 0;  margin-top: 0;">
+        <h2 style="color: whitesmoke; padding-left: 4vw;">Follow me</h2>
+        <a href="https://olivia-qi.github.io/" style="color: whitesmoke;">
+            <p style="margin-left: 3em;"><img src="images/githubwhite2.png" alt="" style="width: 5%;"> olivia-qi</p>
+        </a>
+
+        <a href="https://www.instagram.com/mousey.bublik/" style="color: whitesmoke;">
+            <p style="margin-left: 3em;"><img src="images/instagramwhite.png" alt="" style="width: 5%"> @mousey.bublik</p>
+        </a>
+
+
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+
+</body>
+
+</html>
