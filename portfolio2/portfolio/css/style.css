@@ -638,21 +638,3 @@ textarea {
     cursor: pointer;
     transition: 0.5s;
 }
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-li {
-    height: 80vh;
-    flex-grow: 1;
-    margin: 1em;
-}
-
-img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-}
